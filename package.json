@@ -1,0 +1,44 @@
+{
+  "name": "diabetes-log-cli",
+  "version": "1.0.0",
+  "description": "A CLI tool to log and visualize blood sugar and insulin data",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "diabetes-tracker": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "diabetes",
+    "blood-sugar",
+    "insulin",
+    "health",
+    "cli",
+    "tracker",
+    "glucose"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "asciichart": "^1.5.25",
+    "chalk": "^5.6.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.3",
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
+    "date-fns": "^4.1.0",
+    "inquirer": "^13.2.4"
+  },
+  "devDependencies": {
+    "@types/asciichart": "^1.5.8",
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^25.2.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
