@@ -17,30 +17,33 @@ A command-line tool to log and visualize blood sugar and insulin data, built wit
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Setup
 
 1. **Clone and navigate to the project:**
-   ```bash
-   cd diabetes-log-cli
-   ```
+
+    ```bash
+    cd diabetes-log-cli
+    ```
 
 2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+
+    ```bash
+    npm install
+    ```
 
 3. **Build the project:**
-   ```bash
-   npm run build
-   ```
+
+    ```bash
+    npm run build
+    ```
 
 4. **Link globally (optional):**
-   ```bash
-   npm link
-   ```
+    ```bash
+    npm link
+    ```
 
 ## Usage
 
@@ -59,6 +62,7 @@ Navigate using arrow keys and follow the prompts.
 ### Command Line Mode
 
 #### Log Blood Sugar
+
 ```bash
 npm run dev blood-sugar -- --value 120 --time 08:30 --note "Fasting"
 # or if linked globally:
@@ -66,6 +70,7 @@ diabetes-tracker blood-sugar --value 120 --time 08:30 --note "Fasting"
 ```
 
 #### Log Insulin
+
 ```bash
 npm run dev insulin -- --kind bolus --amount 5 --time 12:00 --note "Lunch"
 # or if linked globally:
@@ -73,6 +78,7 @@ diabetes-tracker insulin --kind bolus --amount 5 --time 12:00 --note "Lunch"
 ```
 
 #### View Statistics
+
 ```bash
 npm run dev stats
 # or if linked globally:
@@ -80,6 +86,7 @@ diabetes-tracker stats
 ```
 
 #### View Graph
+
 ```bash
 npm run dev graph -- --type blood_sugar
 npm run dev graph -- --type insulin
@@ -140,6 +147,7 @@ All logs are saved in `storage.csv` in the project root directory.
 ## Example Output
 
 ### Interactive Menu
+
 ```
 Welcome to the Diabetes Tracker CLI
 
@@ -153,6 +161,7 @@ Welcome to the Diabetes Tracker CLI
 ```
 
 ### ASCII Graph
+
 ```
 BLOOD SUGAR Over Time
 
@@ -170,6 +179,7 @@ Value (mg/dL for blood sugar, units for insulin)
 ```
 
 ### Statistics Table
+
 ```
 Blood Sugar and Insulin Log:
 
@@ -186,9 +196,7 @@ Lowest: 95 mg/dL
 Total readings: 15
 ```
 
-## Contributing
-
-Feel free to submit issues and enhancement requests!
+### The following is my submission for the GitHub Copilot CLI Challenge.
 
 ## License
 
