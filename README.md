@@ -1,6 +1,6 @@
 # Diabetes Tracker CLI
 
-A command-line tool to log and visualize blood sugar and insulin data, built with TypeScript.
+A command-line tool to log and visualize blood sugar and insulin data, built with TypeScript. View submission: [Dev.to Blog Post](https://dev.to/code-qtzl/diabetes-log-cli-22pl)
 
 ## Features
 
