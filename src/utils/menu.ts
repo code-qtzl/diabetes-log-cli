@@ -9,9 +9,7 @@ export async function runMenu(): Promise<void> {
 	let running = true;
 
 	while (running) {
-		console.log(
-			chalk.bold.cyan('\n🩺 Welcome to the Diabetes Tracker CLI\n'),
-		);
+		console.log(chalk.bold.cyan('\n🩺 Welcome to the Diabetes Log CLI\n'));
 
 		const { choice } = await inquirer.prompt([
 			{

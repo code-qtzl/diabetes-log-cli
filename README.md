@@ -1,6 +1,6 @@
-# Diabetes Tracker CLI
+# Diabetes Log CLI
 
-A command-line tool to log and visualize blood sugar and insulin data, built with TypeScript. View submission: [Dev.to Blog Post](https://dev.to/code-qtzl/diabetes-log-cli-22pl)
+The following project is my submission for the GitHub Copilot CLI Challenge. A command-line tool to log and visualize blood sugar and insulin data. I didn't win but I'm pretty happy with what I accomplished. View submission and explanation here: [Dev.to Blog Post](https://dev.to/code-qtzl/diabetes-log-cli-22pl)
 
 ## Features
 
@@ -54,7 +54,7 @@ Run without arguments to start the interactive menu:
 ```bash
 npm run dev
 # or if linked globally:
-diabetes-tracker
+diabetes-log
 ```
 
 Navigate using arrow keys and follow the prompts.
@@ -66,7 +66,7 @@ Navigate using arrow keys and follow the prompts.
 ```bash
 npm run dev blood-sugar -- --value 120 --time 08:30 --note "Fasting"
 # or if linked globally:
-diabetes-tracker blood-sugar --value 120 --time 08:30 --note "Fasting"
+diabetes-log blood-sugar --value 120 --time 08:30 --note "Fasting"
 ```
 
 #### Log Insulin
@@ -74,7 +74,7 @@ diabetes-tracker blood-sugar --value 120 --time 08:30 --note "Fasting"
 ```bash
 npm run dev insulin -- --kind bolus --amount 5 --time 12:00 --note "Lunch"
 # or if linked globally:
-diabetes-tracker insulin --kind bolus --amount 5 --time 12:00 --note "Lunch"
+diabetes-log insulin --kind bolus --amount 5 --time 12:00 --note "Lunch"
 ```
 
 #### View Statistics
@@ -82,7 +82,7 @@ diabetes-tracker insulin --kind bolus --amount 5 --time 12:00 --note "Lunch"
 ```bash
 npm run dev stats
 # or if linked globally:
-diabetes-tracker stats
+diabetes-log stats
 ```
 
 #### View Graph
@@ -91,8 +91,8 @@ diabetes-tracker stats
 npm run dev graph -- --type blood_sugar
 npm run dev graph -- --type insulin
 # or if linked globally:
-diabetes-tracker graph --type blood_sugar
-diabetes-tracker graph --type insulin
+diabetes-log graph --type blood_sugar
+diabetes-log graph --type insulin
 ```
 
 ## Development
@@ -149,7 +149,7 @@ All logs are saved in `storage.csv` in the project root directory.
 ### Interactive Menu
 
 ```
-Welcome to the Diabetes Tracker CLI
+Welcome to the Diabetes Log CLI
 
 ? Choose an option: (Use arrow keys)
 > Log blood sugar
@@ -195,8 +195,6 @@ Highest: 180 mg/dL
 Lowest: 95 mg/dL
 Total readings: 15
 ```
-
-### The following is my submission for the GitHub Copilot CLI Challenge.
 
 ## License
 
