@@ -26,7 +26,7 @@ export function readAllLogs(): Promise<LogEntry[]> {
           type: data.Type,
           kind: data.Kind || "",
           value: parseFloat(data.Value),
-          time: data.Time,
+          time: data.Time ? data.Time.split(":").map((p: string) => p.padStart(2, "0")).join(":") : data.Time,
           note: data.Note || "",
         });
       })

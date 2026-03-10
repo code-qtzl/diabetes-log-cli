@@ -22,6 +22,7 @@ export async function showStats(): Promise<void> {
 				chalk.cyan('Note'),
 			],
 			colWidths: [12, 15, 10, 10, 10, 30],
+			style: { head: [], border: [] },
 		});
 
 		logs.forEach((log) => {
@@ -44,13 +45,15 @@ export async function showStats(): Promise<void> {
 
 		if (bloodSugarLogs.length > 0) {
 			const stats = calculateBloodSugarStats(bloodSugarLogs);
-			console.log(chalk.bold.cyan('\n📊 Blood Sugar Statistics:\n'));
 			console.log(
-				chalk.green(`Average: ${stats.average.toFixed(1)} mg/dL`),
+				chalk.bold.yellowBright('\n📊 Blood Sugar Statistics:\n'),
 			);
-			console.log(chalk.red(`Highest: ${stats.highest} mg/dL`));
-			console.log(chalk.yellow(`Lowest: ${stats.lowest} mg/dL`));
-			console.log(chalk.gray(`Total readings: ${stats.count}`));
+			console.log(
+				chalk.greenBright(`Average: ${stats.average.toFixed(1)} mg/dL`),
+			);
+			console.log(chalk.redBright(`Highest: ${stats.highest} mg/dL`));
+			console.log(chalk.hex('#FFA500')(`Lowest: ${stats.lowest} mg/dL`));
+			console.log(chalk.whiteBright(`Total readings: ${stats.count}`));
 		}
 	} catch (error) {
 		console.error(chalk.red(`Error: ${error}`));
