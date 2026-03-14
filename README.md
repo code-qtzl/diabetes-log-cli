@@ -2,6 +2,10 @@
 
 The following project is my submission for the GitHub Copilot CLI Challenge. A command-line tool to log and visualize blood sugar and insulin data. I didn't win but I'm pretty happy with what I accomplished. View submission and explanation here: [Dev.to Blog Post](https://dev.to/code-qtzl/diabetes-log-cli-22pl)
 
+<div align="center">
+<img src="./assets/bloodsugar-demo.gif" alt="Demo" width="600">
+</div>
+
 ## Features
 
 - Log blood sugar values with optional notes
